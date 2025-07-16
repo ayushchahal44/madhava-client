@@ -29,7 +29,7 @@ const ChatComponent = () => {
     setIsLoading(true);
 
     try {
-      const apiBaseUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+      const apiBaseUrl = process.env.REACT_APP_API_URL;
       const response = await axios.post(`${apiBaseUrl}/api/ask`, {
         question,
       });
